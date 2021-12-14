@@ -1,0 +1,32 @@
+#jelly-header {
+  font-size: 2em;
+  color: #8c0c60;
+  display: block;
+}
+div.ContactUs{
+  display: flex;
+  padding: 4px;
+ 
+  justify-content: center;
+}
+.profiles{    
+  border: 2px solid whitesmoke;
+  margin: 100px;
+  margin-top: 10px;
+  
+ 
+}
+#icons{
+  margin: 20px;
+  color: white;
+}
+.search{
+float: right;
+}
+.logoscu{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0,6%;
+  margin: 13%;
+}

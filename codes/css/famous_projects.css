@@ -1,0 +1,86 @@
+#famous_projects{
+    height: 100vh;
+
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.title {
+  font-size: 2em;
+  color: #8c0c60;
+}
+.c1 {
+    color: #fefefe;
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://s3.us-east-1.amazonaws.com/contents.newzenler.com/4902/library/creenshot-2021-03-25-at-6-04-58605c8465818bd_lg.png");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://dataintelliage.com/wp-content/uploads/2021/06/392227-what-is-data-science-dataquest-500x300.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://i.pinimg.com/564x/6e/00/0b/6e000b3d65c1904e5171fd77ccf72d86.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://www.uncodemy.com/wp-content/uploads/2021/07/Object-oriented-Data-Structure-Algorithms-Training-500x300.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://assets.thehansindia.com/h-upload/2021/01/29/500x300_1027846-blockchain-technology.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://trainingsinvelachery.in/wp-content/uploads/2020/01/android.png");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://excelsior.fun/wp-content/uploads/2021/05/flutter.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("img/harry.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://media.awslagi.com/wp-content/uploads/2021/09/03160350/AZURE140-500x300.jpeg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
